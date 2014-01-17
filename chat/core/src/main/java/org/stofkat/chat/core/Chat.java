@@ -6,7 +6,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 
-public class Chat implements ApplicationListener {
+public abstract class Chat implements ApplicationListener {
 	Texture texture;
 	SpriteBatch batch;
 	float elapsed;
@@ -42,4 +42,6 @@ public class Chat implements ApplicationListener {
 	@Override
 	public void dispose () {
 	}
+	
+	protected abstract void loadUIStuff();
 }

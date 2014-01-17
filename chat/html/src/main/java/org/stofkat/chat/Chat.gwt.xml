@@ -2,6 +2,7 @@
 	<inherits name='com.badlogic.gdx.backends.gdx_backends_gwt' />
 
 	<source path='core'/>
+	<source path='common'/>
 	<source path='html'/>
 
 	<public path="resources" />
