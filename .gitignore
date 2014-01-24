@@ -3,6 +3,7 @@
 .settings/
 target/
 .metadata/
+.gwt/i
 RemoteSystemsTempFiles
 /chat/android/bin/
 /chat/android/gen/

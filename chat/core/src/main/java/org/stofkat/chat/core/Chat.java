@@ -1,12 +1,14 @@
 package org.stofkat.chat.core;
 
+import org.stofkat.chat.common.ClientInterface;
+
 import com.badlogic.gdx.graphics.GL10;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 
-public abstract class Chat implements ApplicationListener {
+public abstract class Chat implements ApplicationListener, ClientInterface {
 	Texture texture;
 	SpriteBatch batch;
 	float elapsed;
