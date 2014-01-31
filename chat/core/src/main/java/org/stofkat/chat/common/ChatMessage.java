@@ -7,6 +7,11 @@ public class ChatMessage {
 	private String message;
 	private long timestamp;
 	
+	/**
+	 *  We need this empty constructor to be able to transmit this object via GWT RPC.
+	 */
+	public ChatMessage() {}
+	
 	public ChatMessage(int id, String authorName, String authorSessionId, String message, long timestamp) {
 		this.id = id;
 		this.authorName = authorName;
@@ -33,5 +38,25 @@ public class ChatMessage {
 	
 	public long getTimestamp() {
 		return timestamp;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setAuthorName(String authorName) {
+		this.authorName = authorName;
+	}
+
+	public void setAuthorSessionId(String authorSessionId) {
+		this.authorSessionId = authorSessionId;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+	public void setTimestamp(long timestamp) {
+		this.timestamp = timestamp;
 	}
 }

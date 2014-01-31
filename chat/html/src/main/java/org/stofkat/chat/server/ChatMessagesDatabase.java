@@ -1,7 +1,6 @@
 package org.stofkat.chat.server;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -44,7 +43,7 @@ public class ChatMessagesDatabase {
 	 * Private constructor so that it cannot be used in other classes.
 	 */
 	private ChatMessagesDatabase() {
-		chatMessages = Collections.synchronizedMap(new HashMap<Integer,ChatMessage>(capacity));
+		chatMessages = new HashMap<Integer,ChatMessage>(capacity);
 		nextAvailableId = new AtomicInteger(0);
 	}
 	
