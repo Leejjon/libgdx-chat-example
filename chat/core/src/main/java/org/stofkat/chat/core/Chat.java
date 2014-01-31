@@ -1,6 +1,8 @@
 package org.stofkat.chat.core;
 
 import org.stofkat.chat.common.ClientInterface;
+import org.stofkat.chat.common.actions.Action;
+import org.stofkat.chat.common.results.Result;
 
 import com.badlogic.gdx.graphics.GL10;
 import com.badlogic.gdx.graphics.Texture;
@@ -13,6 +15,8 @@ public abstract class Chat implements ApplicationListener, ClientInterface {
 	SpriteBatch batch;
 	float elapsed;
 
+	public abstract <R extends Result> void executeServerAction(Action<R> action);
+	
 	@Override
 	public void create () {
 		texture = new Texture(Gdx.files.internal("libgdx-logo.png"));
@@ -43,7 +47,18 @@ public abstract class Chat implements ApplicationListener, ClientInterface {
 
 	@Override
 	public void dispose () {
+		if (texture != null) {
+			texture.dispose();
+		}
+		if (batch != null) {
+			batch.dispose();
+		}
 	}
 	
 	protected abstract void loadUIStuff();
+	
+	@Override
+	public void close() {
+		dispose();
+	}
 }

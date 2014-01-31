@@ -29,7 +29,7 @@
 			<artifactId>gdx-backend-gwt</artifactId>
 			<version>${gdx.version}</version>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>org.stofkat.chat</groupId>
 			<artifactId>chat-core</artifactId>
@@ -47,19 +47,32 @@
 		</dependency>
 
 		<dependency>
+			<groupId>com.google.gwt</groupId>
+			<artifactId>gwt-user</artifactId>
+			<version>${gwt.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		
+		<dependency>
 			<groupId>com.badlogicgames.gdx</groupId>
 			<artifactId>gdx-backend-gwt</artifactId>
 			<version>${gdx.version}</version>
 			<classifier>sources</classifier>
 			<scope>provided</scope>
 		</dependency>
+		
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>3.0</version>
+		</dependency>
 
 		<dependency>
-			<groupId>com.google.gwt</groupId>
-			<artifactId>gwt-user</artifactId>
-			<version>${gwt.version}</version>
-			<scope>provided</scope>
+			<groupId>com.google.inject.extensions</groupId>
+			<artifactId>guice-servlet</artifactId>
+			<version>3.0</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>com.google.gwt</groupId>
 			<artifactId>gwt-servlet</artifactId>
@@ -74,6 +87,7 @@
 				<directory>${project.basedir}/src/main/java</directory>
 				<filtering>true</filtering>
 				<includes>
+				    <include>**/*.java</include>
 					<include>**/*.gwt.xml</include>
 				</includes>
 			</resource>

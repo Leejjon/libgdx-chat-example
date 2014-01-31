@@ -1,0 +1,1353 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Chat Parent
+[INFO] Chat Core
+[INFO] Chat HTML
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Chat Parent 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ chat ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Chat Core 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ chat-core ---
+[INFO] Deleting C:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\core\target
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ chat-core ---
+[INFO] Building jar: C:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\core\target\chat-core-1.0-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ chat-core ---
+[debug] execute contextualize
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\core\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ chat-core ---
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 17 source files to C:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\core\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ chat-core ---
+[debug] execute contextualize
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\core\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ chat-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ chat-core ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: C:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\core\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.2:jar (default-jar) @ chat-core ---
+[INFO] Building jar: C:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\core\target\chat-core-1.0-SNAPSHOT.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Chat HTML 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ chat-html ---
+[INFO] Deleting C:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\html\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ chat-html ---
+[debug] execute contextualize
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 17 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ chat-html ---
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 16 source files to C:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\html\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ chat-html ---
+[debug] execute contextualize
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\html\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ chat-html ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ chat-html ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: C:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\html\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- gwt-maven-plugin:2.5.1:compile (default) @ chat-html ---
+[INFO] Compiling module org.stofkat.chat.Chat
+[INFO] c:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\.
+[INFO] assets
+[INFO] Copying resources from assets to html/target/webapp/
+[INFO] c:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\assets
+[INFO] c:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\assets
+[INFO] c:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\.
+[INFO] assets
+[INFO] Copying resources from assets to html/target/webapp/
+[INFO] c:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\assets
+[INFO] c:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\assets
+[INFO] c:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\.
+[INFO] assets
+[INFO] Copying resources from assets to html/target/webapp/
+[INFO] c:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\assets
+[INFO] c:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\assets
+[INFO] c:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\.
+[INFO] assets
+[INFO] Copying resources from assets to html/target/webapp/
+[INFO] c:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\assets
+[INFO] c:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\assets
+[INFO] c:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\.
+[INFO] assets
+[INFO] Copying resources from assets to html/target/webapp/
+[INFO] c:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\assets
+[INFO] c:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\assets
+[INFO] c:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\.
+[INFO] assets
+[INFO] Copying resources from assets to html/target/webapp/
+[INFO] c:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\assets
+[INFO] c:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\assets
+[INFO]    Computing all possible rebind results for 'com.badlogic.gwtref.client.IReflectionCache'
+[INFO]       Rebinding com.badlogic.gwtref.client.IReflectionCache
+[INFO]          Invoking generator com.badlogic.gwtref.gen.ReflectionCacheGenerator
+[INFO]             com.badlogic.gwtref.client.IReflectionCache
+[INFO]   com.badlogic.gdx.utils.OrderedMap
+[INFO]     com.badlogic.gdx.utils.Array
+[INFO]       java.lang.Object[]
+[INFO]         java.lang.Object
+[INFO]           boolean
+[INFO]           int
+[INFO]           java.lang.String
+[INFO]             java.lang.CharSequence
+[INFO]               char
+[INFO]             char[]
+[INFO]               void
+[INFO]             double
+[INFO]             float
+[INFO]             long
+[INFO]             java.lang.String[]
+[INFO]             byte[]
+[INFO]             int[]
+[INFO]             java.lang.StringBuffer
+[INFO]             java.lang.StringBuilder
+[INFO]       com.badlogic.gdx.utils.Array.ArrayIterable
+[INFO]         com.badlogic.gdx.utils.Array.ArrayIterator
+[INFO]     com.badlogic.gdx.utils.ObjectMap
+[INFO]       com.badlogic.gdx.utils.ObjectMap.Entries
+[INFO]         com.badlogic.gdx.utils.ObjectMap.Entry
+[INFO]       com.badlogic.gdx.utils.ObjectMap.Values
+[INFO]       com.badlogic.gdx.utils.ObjectMap.Keys
+[INFO]   com.badlogic.gdx.utils.Disposable
+[INFO]   com.badlogic.gdx.utils.ArrayMap
+[INFO]     com.badlogic.gdx.utils.ArrayMap.Entries
+[INFO]     com.badlogic.gdx.utils.ArrayMap.Values
+[INFO]     com.badlogic.gdx.utils.ArrayMap.Keys
+[INFO]   com.badlogic.gdx.graphics.VertexAttributes
+[INFO]     com.badlogic.gdx.graphics.VertexAttribute[]
+[INFO]     com.badlogic.gdx.graphics.VertexAttribute
+[INFO]     com.badlogic.gdx.graphics.VertexAttributes.Usage
+[INFO]   com.badlogic.gdx.graphics.Color
+[INFO]   com.badlogic.gdx.graphics.g3d.model.Animation
+[INFO]   com.badlogic.gdx.graphics.g3d.model.MeshPart
+[INFO]   com.badlogic.gdx.graphics.g3d.model.Node
+[INFO]     com.badlogic.gdx.math.Vector3
+[INFO]       com.badlogic.gdx.math.Matrix4
+[INFO]         float[]
+[INFO]         com.badlogic.gdx.math.Quaternion
+[INFO]         com.badlogic.gdx.math.Matrix3
+[INFO]           com.badlogic.gdx.math.Vector2
+[INFO]             com.badlogic.gdx.math.Vector
+[INFO]     com.badlogic.gdx.math.collision.BoundingBox
+[INFO]       com.badlogic.gdx.math.Vector3[]
+[INFO]   com.badlogic.gdx.graphics.g3d.model.NodeKeyframe
+[INFO]   com.badlogic.gdx.graphics.g3d.model.NodeAnimation
+[INFO]   com.badlogic.gdx.graphics.g3d.model.NodePart
+[INFO]     com.badlogic.gdx.math.Matrix4[]
+[INFO]   com.badlogic.gdx.scenes.scene2d.Actor
+[INFO]     com.badlogic.gdx.scenes.scene2d.Stage
+[INFO]       com.badlogic.gdx.scenes.scene2d.Group
+[INFO]         com.badlogic.gdx.math.Rectangle
+[INFO]         com.badlogic.gdx.scenes.scene2d.utils.Cullable
+[INFO]       com.badlogic.gdx.scenes.scene2d.Actor[]
+[INFO]       boolean[]
+[INFO]       com.badlogic.gdx.scenes.scene2d.EventListener
+[INFO]         com.badlogic.gdx.scenes.scene2d.Event
+[INFO]       com.badlogic.gdx.scenes.scene2d.Action
+[INFO]       com.badlogic.gdx.scenes.scene2d.Stage.TouchFocus
+[INFO]     com.badlogic.gdx.scenes.scene2d.Touchable
+[INFO]       java.lang.Enum
+[INFO]         java.lang.Enum[]
+[INFO]       com.badlogic.gdx.scenes.scene2d.Touchable[]
+[INFO]   com.badlogic.gdx.scenes.scene2d.InputEvent
+[INFO]     com.badlogic.gdx.scenes.scene2d.InputEvent.Type
+[INFO]       com.badlogic.gdx.scenes.scene2d.InputEvent.Type[]
+[INFO]   com.badlogic.gdx.scenes.scene2d.InputListener
+[INFO]   java.util.HashMap
+[INFO]   java.util.Map
+[INFO]   java.util.ArrayList
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.TimeScaleAction
+[INFO]     com.badlogic.gdx.scenes.scene2d.actions.DelegateAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.FloatAction
+[INFO]     com.badlogic.gdx.scenes.scene2d.actions.TemporalAction
+[INFO]       com.badlogic.gdx.math.Interpolation
+[INFO]         com.badlogic.gdx.math.Interpolation.Pow
+[INFO]         com.badlogic.gdx.math.Interpolation.PowIn
+[INFO]         com.badlogic.gdx.math.Interpolation.PowOut
+[INFO]         com.badlogic.gdx.math.Interpolation.Elastic
+[INFO]         com.badlogic.gdx.math.Interpolation.Swing
+[INFO]         com.badlogic.gdx.math.Interpolation.ElasticOut
+[INFO]         com.badlogic.gdx.math.Interpolation.Bounce
+[INFO]           com.badlogic.gdx.math.Interpolation.BounceOut
+[INFO]         com.badlogic.gdx.math.Interpolation.SwingIn
+[INFO]         com.badlogic.gdx.math.Interpolation.Exp
+[INFO]         com.badlogic.gdx.math.Interpolation.SwingOut
+[INFO]         com.badlogic.gdx.math.Interpolation.BounceIn
+[INFO]         com.badlogic.gdx.math.Interpolation.ElasticIn
+[INFO]         com.badlogic.gdx.math.Interpolation.ExpIn
+[INFO]         com.badlogic.gdx.math.Interpolation.ExpOut
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.AlphaAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.SequenceAction
+[INFO]     com.badlogic.gdx.scenes.scene2d.actions.ParallelAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.ScaleByAction
+[INFO]     com.badlogic.gdx.scenes.scene2d.actions.RelativeTemporalAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.LayoutAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.AddAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.RemoveListenerAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.RotateByAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.TouchableAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.AfterAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.RepeatAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.MoveByAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.ColorAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.MoveToAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.RemoveAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.SizeToAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.AddListenerAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.RemoveActorAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.VisibleAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.ScaleToAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.RotateToAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.DelayAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.IntAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.RunnableAction
+[INFO]   com.badlogic.gdx.scenes.scene2d.actions.Actions
+[INFO]     com.badlogic.gdx.scenes.scene2d.actions.SizeByAction
+[INFO]     com.badlogic.gdx.scenes.scene2d.Action[]
+[INFO]   com.google.gwt.user.client.rpc.core.java.lang.Integer_CustomFieldSerializer
+[INFO]     java.lang.Integer
+[INFO]       byte
+[INFO]       short
+[INFO]   com.google.gwt.user.client.rpc.core.java.lang.String_CustomFieldSerializer
+[INFO]   com.google.gwt.user.client.rpc.core.java.lang.Object_Array_CustomFieldSerializer
+[INFO]   com.google.gwt.user.client.rpc.core.java.lang.Float_CustomFieldSerializer
+[INFO]     java.lang.Float
+[INFO]   com.google.gwt.user.client.rpc.core.java.lang.String_FieldSerializer
+[INFO]   com.google.gwt.user.client.rpc.core.java.lang.Byte_CustomFieldSerializer
+[INFO]     java.lang.Byte
+[INFO]   com.google.gwt.user.client.rpc.core.java.lang.Character_CustomFieldSerializer
+[INFO]     java.lang.Character
+[INFO]   com.google.gwt.user.client.rpc.core.java.lang.Short_CustomFieldSerializer
+[INFO]     java.lang.Short
+[INFO]   com.google.gwt.user.client.rpc.core.java.lang.Double_CustomFieldSerializer
+[INFO]     java.lang.Double
+[INFO]       double[]
+[INFO]   com.google.gwt.user.client.rpc.core.java.lang.Boolean_CustomFieldSerializer
+[INFO]     java.lang.Boolean
+[INFO]   com.badlogic.gdx.math.Frustum
+[INFO]     com.badlogic.gdx.math.Plane[]
+[INFO]   com.badlogic.gdx.math.Circle
+[INFO]   com.badlogic.gdx.math.CatmullRomSpline
+[INFO]     com.badlogic.gdx.math.Vector[]
+[INFO]     com.badlogic.gdx.math.Path
+[INFO]   com.badlogic.gdx.math.Ellipse
+[INFO]   com.badlogic.gdx.math.Polygon
+[INFO]   com.badlogic.gdx.math.DelaunayTriangulator
+[INFO]     short[]
+[INFO]   com.badlogic.gdx.math.Bresenham2
+[INFO]     com.badlogic.gdx.math.GridPoint2
+[INFO]   com.badlogic.gdx.math.GridPoint3
+[INFO]   com.badlogic.gdx.math.ConvexHull
+[INFO]   com.badlogic.gdx.math.Bezier
+[INFO]   com.badlogic.gdx.math.FloatCounter
+[INFO]     com.badlogic.gdx.math.WindowedMean
+[INFO]   com.badlogic.gdx.math.Plane
+[INFO]     com.badlogic.gdx.math.Plane.PlaneSide
+[INFO]       com.badlogic.gdx.math.Plane.PlaneSide[]
+[INFO]   com.badlogic.gdx.math.MathUtils
+[INFO]   com.badlogic.gdx.math.GeometryUtils
+[INFO]   com.badlogic.gdx.math.Polyline
+[INFO]   com.badlogic.gdx.math.EarClippingTriangulator
+[INFO]   com.badlogic.gdx.math.Intersector
+[INFO]     com.badlogic.gdx.math.collision.Ray
+[INFO]     com.badlogic.gdx.math.Intersector.MinimumTranslationVector
+[INFO]     com.badlogic.gdx.math.Intersector.SplitTriangle
+[INFO]   com.badlogic.gdx.math.BSpline
+[INFO]   com.badlogic.gdx.math.collision.Segment
+[INFO]   com.badlogic.gdx.math.collision.Sphere
+[INFO]   com.google.gwt.user.client.rpc.core.java.util.HashMap_CustomFieldSerializer
+[INFO]   com.google.gwt.user.client.rpc.core.java.util.Map_CustomFieldSerializerBase
+[INFO]   com.google.gwt.user.client.rpc.core.java.util.ArrayList_CustomFieldSerializer
+[INFO]   com.badlogic.gdx.graphics.g3d.model.data.ModelTexture
+[INFO]   com.badlogic.gdx.graphics.g3d.model.data.ModelData
+[INFO]     com.badlogic.gdx.graphics.g3d.model.data.ModelMesh
+[INFO]       com.badlogic.gdx.graphics.g3d.model.data.ModelMeshPart[]
+[INFO]   com.badlogic.gdx.graphics.g3d.model.data.ModelMaterial
+[INFO]     com.badlogic.gdx.graphics.g3d.model.data.ModelMaterial.MaterialType
+[INFO]       com.badlogic.gdx.graphics.g3d.model.data.ModelMaterial.MaterialType[]
+[INFO]   com.badlogic.gdx.graphics.g3d.model.data.ModelNodePart
+[INFO]     int[][]
+[INFO]   com.badlogic.gdx.graphics.g3d.model.data.ModelAnimation
+[INFO]   com.badlogic.gdx.graphics.g3d.model.data.ModelNodeAnimation
+[INFO]   com.badlogic.gdx.graphics.g3d.model.data.ModelMeshPart
+[INFO]   com.badlogic.gdx.graphics.g3d.model.data.ModelNode
+[INFO]     com.badlogic.gdx.graphics.g3d.model.data.ModelNodePart[]
+[INFO]     com.badlogic.gdx.graphics.g3d.model.data.ModelNode[]
+[INFO]   com.badlogic.gdx.graphics.g3d.model.data.ModelNodeKeyframe
+[INFO]   com.badlogic.gdx.scenes.scene2d.ui.Touchpad
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.Touchpad.TouchpadStyle
+[INFO]       com.badlogic.gdx.scenes.scene2d.utils.Drawable
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.Widget
+[INFO]       com.badlogic.gdx.scenes.scene2d.utils.Layout
+[INFO]   com.badlogic.gdx.scenes.scene2d.ui.HorizontalGroup
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.WidgetGroup
+[INFO]   com.badlogic.gdx.scenes.scene2d.ui.Stack
+[INFO]   com.badlogic.gdx.scenes.scene2d.ui.Tree
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.Tree.TreeStyle
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.Tree.Node
+[INFO]     com.badlogic.gdx.scenes.scene2d.utils.ClickListener
+[INFO]   com.badlogic.gdx.scenes.scene2d.ui.Skin
+[INFO]     com.badlogic.gdx.graphics.g2d.BitmapFont
+[INFO]       com.badlogic.gdx.graphics.g2d.BitmapFont.BitmapFontData
+[INFO]         com.badlogic.gdx.graphics.g2d.BitmapFont.Glyph[][]
+[INFO]         com.badlogic.gdx.graphics.g2d.BitmapFont.Glyph
+[INFO]           byte[][]
+[INFO]       com.badlogic.gdx.graphics.g2d.TextureRegion[]
+[INFO]       com.badlogic.gdx.graphics.g2d.BitmapFontCache
+[INFO]         float[][]
+[INFO]         com.badlogic.gdx.graphics.g2d.BitmapFont.TextBounds
+[INFO]         com.badlogic.gdx.graphics.g2d.BitmapFont.HAlignment
+[INFO]           com.badlogic.gdx.graphics.g2d.BitmapFont.HAlignment[]
+[INFO]       com.badlogic.gdx.graphics.g2d.TextureRegion
+[INFO]         com.badlogic.gdx.graphics.g2d.TextureRegion[][]
+[INFO]     com.badlogic.gdx.scenes.scene2d.utils.TiledDrawable
+[INFO]       com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable
+[INFO]         com.badlogic.gdx.scenes.scene2d.utils.BaseDrawable
+[INFO]     com.badlogic.gdx.graphics.g2d.NinePatch
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.Skin.TintedDrawable
+[INFO]   com.badlogic.gdx.scenes.scene2d.ui.VerticalGroup
+[INFO]   com.badlogic.gdx.scenes.scene2d.ui.TableToolkit
+[INFO]   com.badlogic.gdx.scenes.scene2d.ui.Image
+[INFO]   com.badlogic.gdx.scenes.scene2d.ui.TextField
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.TextField.TextFieldStyle
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.TextField.TextFieldListener
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.TextField.TextFieldFilter
+[INFO]       com.badlogic.gdx.scenes.scene2d.ui.TextField.TextFieldFilter.DigitsOnlyFilter
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.TextField.OnscreenKeyboard
+[INFO]     com.badlogic.gdx.scenes.scene2d.utils.Disableable
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.TextField.DefaultOnscreenKeyboard
+[INFO]   com.badlogic.gdx.scenes.scene2d.ui.SplitPane
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.SplitPane.SplitPaneStyle
+[INFO]   com.badlogic.gdx.scenes.scene2d.ui.Window
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.Window.WindowStyle
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.Table
+[INFO]   com.badlogic.gdx.scenes.scene2d.ui.ImageButton
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.ImageButton.ImageButtonStyle
+[INFO]       com.badlogic.gdx.scenes.scene2d.ui.Button.ButtonStyle
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.Button
+[INFO]       com.badlogic.gdx.scenes.scene2d.ui.ButtonGroup
+[INFO]         com.badlogic.gdx.scenes.scene2d.ui.Button[]
+[INFO]   com.badlogic.gdx.scenes.scene2d.ui.Dialog
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.Label
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle
+[INFO]   com.badlogic.gdx.scenes.scene2d.ui.SelectBox
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.SelectBox.SelectBoxStyle
+[INFO]       com.badlogic.gdx.scenes.scene2d.ui.ScrollPane.ScrollPaneStyle
+[INFO]       com.badlogic.gdx.scenes.scene2d.ui.List.ListStyle
+[INFO]   com.badlogic.gdx.scenes.scene2d.ui.Slider
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.Slider.SliderStyle
+[INFO]   com.badlogic.gdx.scenes.scene2d.ui.CheckBox
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.CheckBox.CheckBoxStyle
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.TextButton
+[INFO]   com.badlogic.gdx.scenes.scene2d.ui.ScrollPane
+[INFO]     com.badlogic.gdx.scenes.scene2d.utils.ActorGestureListener
+[INFO]   com.badlogic.gdx.scenes.scene2d.ui.List
+[INFO]   com.badlogic.gdx.scenes.scene2d.ui.ImageTextButton
+[INFO]     com.badlogic.gdx.scenes.scene2d.ui.ImageTextButton.ImageTextButtonStyle
+[INFO]   com.badlogic.gdx.scenes.scene2d.utils.Align
+[INFO]   com.badlogic.gdx.scenes.scene2d.utils.ScissorStack
+[INFO]   com.badlogic.gdx.scenes.scene2d.utils.NinePatchDrawable
+[INFO]   com.badlogic.gdx.scenes.scene2d.utils.SpriteDrawable
+[INFO]   com.badlogic.gdx.scenes.scene2d.utils.FocusListener
+[INFO]     com.badlogic.gdx.scenes.scene2d.utils.FocusListener.FocusEvent
+[INFO]       com.badlogic.gdx.scenes.scene2d.utils.FocusListener.FocusEvent.Type
+[INFO]         com.badlogic.gdx.scenes.scene2d.utils.FocusListener.FocusEvent.Type[]
+[INFO]   com.badlogic.gdx.scenes.scene2d.utils.DragListener
+[INFO]   com.badlogic.gdx.scenes.scene2d.utils.DragScrollListener
+[INFO]   com.badlogic.gdx.scenes.scene2d.utils.ChangeListener
+[INFO]     com.badlogic.gdx.scenes.scene2d.utils.ChangeListener.ChangeEvent
+[INFO]   com.badlogic.gdx.scenes.scene2d.utils.DragAndDrop
+[INFO]     com.badlogic.gdx.scenes.scene2d.utils.DragAndDrop.Source
+[INFO]       com.badlogic.gdx.scenes.scene2d.utils.DragAndDrop.Payload
+[INFO]       com.badlogic.gdx.scenes.scene2d.utils.DragAndDrop.Target
+[INFO]   java.lang.StringIndexOutOfBoundsException
+[INFO]             not emitting code for accessing field CASE_INSENSITIVE_ORDER in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field CHARSET_8859_1 in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field CHARSET_LATIN1 in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field CHARSET_UTF8 in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field serialVersionUID in class 'com.badlogic.gdx.math.collision.Sphere.class as its of type long which can't be used with JSNI
+[INFO]             not emitting code for accessing field tapCountInterval in class 'com.badlogic.gdx.scenes.scene2d.utils.ClickListener.class as its of type long which can't be used with JSNI
+[INFO]             not emitting code for accessing field lastTapTime in class 'com.badlogic.gdx.scenes.scene2d.utils.ClickListener.class as its of type long which can't be used with JSNI
+[INFO]             not emitting code for accessing field serialVersionUID in class 'com.badlogic.gdx.math.collision.Ray.class as its of type long which can't be used with JSNI
+[INFO]             not emitting code for accessing field array in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field exposeElement in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field size in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field impl in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field data in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MAX_VALUE in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MIN_VALUE in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MIN_NORMAL in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MAX_EXPONENT in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MIN_EXPONENT in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field NaN in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field NEGATIVE_INFINITY in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POSITIVE_INFINITY in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field SIZE in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field TYPE in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_512 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_MINUS_512 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_256 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_MINUS_256 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_128 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_MINUS_128 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_64 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_MINUS_64 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_52 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_MINUS_52 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_32 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_MINUS_32 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_31 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_20 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_MINUS_20 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_16 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_MINUS_16 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_8 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_MINUS_8 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_4 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_MINUS_4 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_2 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_MINUS_2 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_1 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_MINUS_1 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_MINUS_1022 in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field powers in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field invPowers in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field value in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             field 'layout' in class 'com.badlogic.gdx.scenes.scene2d.ui.Table.class' is not accessible as its type 'null' is not public
+[INFO]             not emitting code for accessing field name in class 'java.lang.Enum.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field ordinal in class 'java.lang.Enum.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field serialVersionUID in class 'com.badlogic.gdx.math.Vector3.class as its of type long which can't be used with JSNI
+[INFO]             not emitting code for accessing field serialVersionUID in class 'com.badlogic.gdx.math.collision.BoundingBox.class as its of type long which can't be used with JSNI
+[INFO]             not emitting code for accessing field serialVersionUID in class 'com.badlogic.gdx.math.Matrix3.class as its of type long which can't be used with JSNI
+[INFO]             not emitting code for accessing field MIN_VALUE in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MAX_VALUE in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field SIZE in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field TYPE in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field value in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field serialVersionUID in class 'com.badlogic.gdx.math.Quaternion.class as its of type long which can't be used with JSNI
+[INFO]             field 'list' in class 'com.badlogic.gdx.scenes.scene2d.ui.SelectBox.class' is not accessible as its type 'null' is not public
+[INFO]             not emitting code for accessing field impl in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field data in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field serialVersionUID in class 'com.badlogic.gdx.math.Rectangle.class as its of type long which can't be used with JSNI
+[INFO]             not emitting code for accessing field dragStartTime in class 'com.badlogic.gdx.scenes.scene2d.utils.DragAndDrop.class as its of type long which can't be used with JSNI
+[INFO]             not emitting code for accessing field startTime in class 'com.badlogic.gdx.scenes.scene2d.utils.DragScrollListener.class as its of type long which can't be used with JSNI
+[INFO]             not emitting code for accessing field rampTime in class 'com.badlogic.gdx.scenes.scene2d.utils.DragScrollListener.class as its of type long which can't be used with JSNI
+[INFO]             not emitting code for accessing field serialVersionUID in class 'com.badlogic.gdx.math.Ellipse.class as its of type long which can't be used with JSNI
+[INFO]             not emitting code for accessing field serialVersionUID in class 'com.badlogic.gdx.math.collision.Segment.class as its of type long which can't be used with JSNI
+[INFO]             not emitting code for accessing field ___clazz in class 'java.lang.Object.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field expando in class 'java.lang.Object.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field castableTypeMap in class 'java.lang.Object.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field typeMarker in class 'java.lang.Object.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field TYPE in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MIN_RADIX in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MAX_RADIX in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MIN_VALUE in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MAX_VALUE in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MIN_SURROGATE in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MAX_SURROGATE in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MIN_LOW_SURROGATE in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MAX_LOW_SURROGATE in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MIN_HIGH_SURROGATE in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MAX_HIGH_SURROGATE in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MIN_SUPPLEMENTARY_CODE_POINT in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MIN_CODE_POINT in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MAX_CODE_POINT in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field SIZE in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field value in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MIN_VALUE in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MAX_VALUE in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field SIZE in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field TYPE in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field value in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MAX_VALUE in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MIN_VALUE in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field SIZE in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field TYPE in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field value in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field FALSE in class 'java.lang.Boolean.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field TRUE in class 'java.lang.Boolean.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field TYPE in class 'java.lang.Boolean.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field value in class 'java.lang.Boolean.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field serialVersionUID in class 'com.badlogic.gdx.math.Matrix4.class as its of type long which can't be used with JSNI
+[INFO]             not emitting code for accessing field exposeKey in class 'java.util.HashMap.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field exposeValue in class 'java.util.HashMap.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MAX_VALUE in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MIN_VALUE in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MAX_EXPONENT in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MIN_EXPONENT in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field MIN_NORMAL in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field NaN in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field NEGATIVE_INFINITY in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POSITIVE_INFINITY in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field SIZE in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field TYPE in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_31_INT in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field POWER_32_INT in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field value in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing field serialVersionUID in class 'com.badlogic.gdx.math.Plane.class as its of type long which can't be used with JSNI
+[INFO]             not emitting code for accessing field lastBlink in class 'com.badlogic.gdx.scenes.scene2d.ui.TextField.class as its of type long which can't be used with JSNI
+[INFO]             field 'keyRepeatTask' in class 'com.badlogic.gdx.scenes.scene2d.ui.TextField.class' is not accessible as its type 'null' is not public
+[INFO]             not emitting code for accessing field serialVersionUID in class 'com.badlogic.gdx.math.Vector2.class as its of type long which can't be used with JSNI
+[INFO]             not emitting code for accessing field mask in class 'com.badlogic.gdx.graphics.VertexAttributes.class as its of type long which can't be used with JSNI
+[INFO]             not emitting code for accessing method copyValueOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method copyValueOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method __checkBounds in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method __createArray in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method __translateReplaceString in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method __valueOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method _String in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method _String in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method _String in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method _String in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method _String in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method _String in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method _String in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method _String in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method _String in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method _String in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method _String in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method __equals in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method compareTo in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method compareTo in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method encodeUtf8 in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method fromCharCode in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method fromCodePoint in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method getBytesLatin1 in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method getBytesUtf8 in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method latin1ToString in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method regionMatches in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method regionMatches in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method regionMatches in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method utf8ToString in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method charAt in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method codePointAt in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method codePointBefore in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method codePointCount in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method compareToIgnoreCase in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method concat in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method contains in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method contentEquals in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method contentEquals in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method endsWith in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method equals in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method equalsIgnoreCase in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method getBytes in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method getBytes in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method getChars in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method indexOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method indexOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method indexOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method indexOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method intern in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isEmpty in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method lastIndexOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method lastIndexOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method lastIndexOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method lastIndexOf in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method length in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method matches in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method offsetByCodePoints in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method replace in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method replace in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method replaceAll in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method replaceFirst in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method split in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method split in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method startsWith in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method startsWith in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method subSequence in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method substring in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method substring in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toCharArray in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toLowerCase in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toUpperCase in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method trim in class 'java.lang.String.class, either in java.* or GWT related class
+[INFO]             method 'equals' of class 'byte[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'byte[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'byte[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'byte[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'byte[].class' is not invokable because the class is an array type
+[INFO]             not emitting code for accessing method deserialize in class 'com.google.gwt.user.client.rpc.core.java.lang.Boolean_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method instantiate in class 'com.google.gwt.user.client.rpc.core.java.lang.Boolean_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serialize in class 'com.google.gwt.user.client.rpc.core.java.lang.Boolean_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deserializeInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Boolean_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hasCustomInstantiateInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Boolean_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method instantiateInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Boolean_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serializeInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Boolean_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             method 'equals' of class 'com.badlogic.gdx.math.Plane[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.math.Plane[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.math.Plane[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.math.Plane[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.math.Plane[].class' is not invokable because the class is an array type
+[INFO]             not emitting code for accessing method charAt in class 'java.lang.CharSequence.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method length in class 'java.lang.CharSequence.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method subSequence in class 'java.lang.CharSequence.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.CharSequence.class, either in java.* or GWT related class
+[INFO]             method 'equals' of class 'short[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'short[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'short[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'short[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'short[].class' is not invokable because the class is an array type
+[INFO]             method 'equals' of class 'com.badlogic.gdx.scenes.scene2d.Touchable[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.scenes.scene2d.Touchable[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.scenes.scene2d.Touchable[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.scenes.scene2d.Touchable[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.scenes.scene2d.Touchable[].class' is not invokable because the class is an array type
+[INFO]             method 'equals' of class 'com.badlogic.gdx.scenes.scene2d.Action[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.scenes.scene2d.Action[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.scenes.scene2d.Action[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.scenes.scene2d.Action[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.scenes.scene2d.Action[].class' is not invokable because the class is an array type
+[INFO]             method 'equals' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelMaterial.MaterialType[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelMaterial.MaterialType[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelMaterial.MaterialType[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelMaterial.MaterialType[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelMaterial.MaterialType[].class' is not invokable because the class is an array type
+[INFO]             method 'equals' of class 'double[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'double[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'double[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'double[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'double[].class' is not invokable because the class is an array type
+[INFO]             not emitting code for accessing method setCapacity in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method splice in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method splice in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method spliceArray in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method add in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method add in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method addAll in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method addAll in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method clear in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method clone in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method contains in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method ensureCapacity in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method get in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method indexOf in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method indexOf in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isEmpty in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method lastIndexOf in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method lastIndexOf in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method remove in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method remove in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method set in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method size in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toArray in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toArray in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method trimToSize in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method removeRange in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method capacity in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method setSize in class 'java.util.ArrayList.class, either in java.* or GWT related class
+[INFO]             method 'equals' of class 'com.badlogic.gdx.graphics.VertexAttribute[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.graphics.VertexAttribute[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.graphics.VertexAttribute[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.graphics.VertexAttribute[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.graphics.VertexAttribute[].class' is not invokable because the class is an array type
+[INFO]             not emitting code for accessing method deserialize in class 'com.google.gwt.user.client.rpc.core.java.util.HashMap_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serialize in class 'com.google.gwt.user.client.rpc.core.java.util.HashMap_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deserializeInstance in class 'com.google.gwt.user.client.rpc.core.java.util.HashMap_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serializeInstance in class 'com.google.gwt.user.client.rpc.core.java.util.HashMap_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             method 'equals' of class 'com.badlogic.gdx.graphics.g2d.TextureRegion[][].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.graphics.g2d.TextureRegion[][].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.graphics.g2d.TextureRegion[][].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.graphics.g2d.TextureRegion[][].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.graphics.g2d.TextureRegion[][].class' is not invokable because the class is an array type
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method capacity in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method charAt in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method delete in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deleteCharAt in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method ensureCapacity in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method getChars in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method indexOf in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method indexOf in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method lastIndexOf in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method lastIndexOf in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method length in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method replace in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method setCharAt in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method setLength in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method subSequence in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method substring in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method substring in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method trimToSize in class 'java.lang.StringBuffer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deserialize in class 'com.google.gwt.user.client.rpc.core.java.lang.String_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method instantiate in class 'com.google.gwt.user.client.rpc.core.java.lang.String_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serialize in class 'com.google.gwt.user.client.rpc.core.java.lang.String_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deserializeInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.String_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hasCustomInstantiateInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.String_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method instantiateInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.String_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serializeInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.String_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method equals in class 'java.lang.Enum[].class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method getClass in class 'java.lang.Enum[].class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.lang.Enum[].class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.Enum[].class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method finalize in class 'java.lang.Enum[].class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method equals in class 'java.lang.Object[].class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method getClass in class 'java.lang.Object[].class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.lang.Object[].class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.Object[].class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method finalize in class 'java.lang.Object[].class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method compare in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method doubleToLongBits in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isInfinite in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isInfinite in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isNaN in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isNaN in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method longBitsToDouble in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method parseDouble in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method byteValue in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method compareTo in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method doubleValue in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method equals in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method floatValue in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method intValue in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method longValue in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method shortValue in class 'java.lang.Double.class, either in java.* or GWT related class
+[INFO]             method 'equals' of class 'com.badlogic.gdx.math.Plane.PlaneSide[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.math.Plane.PlaneSide[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.math.Plane.PlaneSide[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.math.Plane.PlaneSide[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.math.Plane.PlaneSide[].class' is not invokable because the class is an array type
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.Enum.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.Enum.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method createValueOfMap in class 'java.lang.Enum.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method get0 in class 'java.lang.Enum.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method invokeValueOf in class 'java.lang.Enum.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method put0 in class 'java.lang.Enum.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method compareTo in class 'java.lang.Enum.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method equals in class 'java.lang.Enum.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method getDeclaringClass in class 'java.lang.Enum.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.lang.Enum.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method name in class 'java.lang.Enum.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method obfuscatedName in class 'java.lang.Enum.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method ordinal in class 'java.lang.Enum.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.Enum.class, either in java.* or GWT related class
+[INFO]             method 'equals' of class 'com.badlogic.gdx.graphics.g2d.TextureRegion[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.graphics.g2d.TextureRegion[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.graphics.g2d.TextureRegion[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.graphics.g2d.TextureRegion[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.graphics.g2d.TextureRegion[].class' is not invokable because the class is an array type
+[INFO]             not emitting code for accessing method deserialize in class 'com.google.gwt.user.client.rpc.core.java.util.ArrayList_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serialize in class 'com.google.gwt.user.client.rpc.core.java.util.ArrayList_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deserializeInstance in class 'com.google.gwt.user.client.rpc.core.java.util.ArrayList_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serializeInstance in class 'com.google.gwt.user.client.rpc.core.java.util.ArrayList_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             method 'equals' of class 'com.badlogic.gdx.graphics.g2d.BitmapFont.Glyph[][].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.graphics.g2d.BitmapFont.Glyph[][].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.graphics.g2d.BitmapFont.Glyph[][].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.graphics.g2d.BitmapFont.Glyph[][].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.graphics.g2d.BitmapFont.Glyph[][].class' is not invokable because the class is an array type
+[INFO]             method 'equals' of class 'com.badlogic.gdx.scenes.scene2d.utils.FocusListener.FocusEvent.Type[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.scenes.scene2d.utils.FocusListener.FocusEvent.Type[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.scenes.scene2d.utils.FocusListener.FocusEvent.Type[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.scenes.scene2d.utils.FocusListener.FocusEvent.Type[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.scenes.scene2d.utils.FocusListener.FocusEvent.Type[].class' is not invokable because the class is an array type
+[INFO]             method 'equals' of class 'com.badlogic.gdx.math.Vector[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.math.Vector[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.math.Vector[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.math.Vector[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.math.Vector[].class' is not invokable because the class is an array type
+[INFO]             not emitting code for accessing method deserialize in class 'com.google.gwt.user.client.rpc.core.java.lang.Character_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method instantiate in class 'com.google.gwt.user.client.rpc.core.java.lang.Character_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serialize in class 'com.google.gwt.user.client.rpc.core.java.lang.Character_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deserializeInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Character_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hasCustomInstantiateInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Character_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method instantiateInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Character_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serializeInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Character_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             method 'equals' of class 'com.badlogic.gdx.scenes.scene2d.InputEvent.Type[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.scenes.scene2d.InputEvent.Type[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.scenes.scene2d.InputEvent.Type[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.scenes.scene2d.InputEvent.Type[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.scenes.scene2d.InputEvent.Type[].class' is not invokable because the class is an array type
+[INFO]             method 'equals' of class 'float[][].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'float[][].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'float[][].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'float[][].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'float[][].class' is not invokable because the class is an array type
+[INFO]             not emitting code for accessing method clear in class 'java.util.Map.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method containsKey in class 'java.util.Map.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method containsValue in class 'java.util.Map.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method entrySet in class 'java.util.Map.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method equals in class 'java.util.Map.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method get in class 'java.util.Map.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.util.Map.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isEmpty in class 'java.util.Map.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method keySet in class 'java.util.Map.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method put in class 'java.util.Map.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method putAll in class 'java.util.Map.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method remove in class 'java.util.Map.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method size in class 'java.util.Map.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method values in class 'java.util.Map.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method decode in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method parseByte in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method parseByte in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method byteValue in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method compareTo in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method doubleValue in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method equals in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method floatValue in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method intValue in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method longValue in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method shortValue in class 'java.lang.Byte.class, either in java.* or GWT related class
+[INFO]             method 'equals' of class 'float[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'float[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'float[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'float[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'float[].class' is not invokable because the class is an array type
+[INFO]             method 'equals' of class 'com.badlogic.gdx.math.Matrix4[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.math.Matrix4[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.math.Matrix4[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.math.Matrix4[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.math.Matrix4[].class' is not invokable because the class is an array type
+[INFO]             method 'equals' of class 'com.badlogic.gdx.math.Vector3[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.math.Vector3[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.math.Vector3[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.math.Vector3[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.math.Vector3[].class' is not invokable because the class is an array type
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method append in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method capacity in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method charAt in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method delete in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deleteCharAt in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method ensureCapacity in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method getChars in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method indexOf in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method indexOf in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method insert in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method lastIndexOf in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method lastIndexOf in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method length in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method replace in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method setCharAt in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method setLength in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method subSequence in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method substring in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method substring in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method trimToSize in class 'java.lang.StringBuilder.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deserialize in class 'com.google.gwt.user.client.rpc.core.java.lang.Byte_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method instantiate in class 'com.google.gwt.user.client.rpc.core.java.lang.Byte_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serialize in class 'com.google.gwt.user.client.rpc.core.java.lang.Byte_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deserializeInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Byte_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hasCustomInstantiateInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Byte_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method instantiateInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Byte_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serializeInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Byte_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             method 'equals' of class 'int[][].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'int[][].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'int[][].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'int[][].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'int[][].class' is not invokable because the class is an array type
+[INFO]             not emitting code for accessing method deserialize in class 'com.google.gwt.user.client.rpc.core.java.util.Map_CustomFieldSerializerBase.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serialize in class 'com.google.gwt.user.client.rpc.core.java.util.Map_CustomFieldSerializerBase.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deserialize in class 'com.google.gwt.user.client.rpc.core.java.lang.Integer_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method instantiate in class 'com.google.gwt.user.client.rpc.core.java.lang.Integer_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serialize in class 'com.google.gwt.user.client.rpc.core.java.lang.Integer_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deserializeInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Integer_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hasCustomInstantiateInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Integer_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method instantiateInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Integer_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serializeInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Integer_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method equals in class 'java.lang.Object.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method getClass in class 'java.lang.Object.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.lang.Object.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.Object.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method finalize in class 'java.lang.Object.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method charCount in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method codePointAt in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method codePointAt in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method codePointAt in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method codePointAt in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method codePointBefore in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method codePointBefore in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method codePointBefore in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method codePointBefore in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method codePointCount in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method codePointCount in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method digit in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method forDigit in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isDigit in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isHighSurrogate in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isLetter in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isLetterOrDigit in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isLowerCase in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isLowSurrogate in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isSpace in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isSupplementaryCodePoint in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isSurrogatePair in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isUpperCase in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isValidCodePoint in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method offsetByCodePoints in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method offsetByCodePoints in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toChars in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toChars in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toCodePoint in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toLowerCase in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toUpperCase in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method getHighSurrogate in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method getLowSurrogate in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method charValue in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method compareTo in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method equals in class 'java.lang.Character.class, either in java.* or GWT related class
+[INFO]             method 'equals' of class 'int[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'int[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'int[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'int[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'int[].class' is not invokable because the class is an array type
+[INFO]             not emitting code for accessing method decode in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method parseShort in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method parseShort in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method reverseBytes in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method byteValue in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method compareTo in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method doubleValue in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method equals in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method floatValue in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method intValue in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method longValue in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method shortValue in class 'java.lang.Short.class, either in java.* or GWT related class
+[INFO]             method 'equals' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelNode[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelNode[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelNode[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelNode[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelNode[].class' is not invokable because the class is an array type
+[INFO]             method 'equals' of class 'com.badlogic.gdx.graphics.g2d.BitmapFont.HAlignment[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.graphics.g2d.BitmapFont.HAlignment[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.graphics.g2d.BitmapFont.HAlignment[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.graphics.g2d.BitmapFont.HAlignment[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.graphics.g2d.BitmapFont.HAlignment[].class' is not invokable because the class is an array type
+[INFO]             not emitting code for accessing method bitCount in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method decode in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method highestOneBit in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method lowestOneBit in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method numberOfLeadingZeros in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method numberOfTrailingZeros in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method parseInt in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method parseInt in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method reverse in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method reverseBytes in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method rotateLeft in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method rotateRight in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method signum in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toBinaryString in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toHexString in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toOctalString in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toPowerOfTwoString in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method byteValue in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method compareTo in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method doubleValue in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method equals in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method floatValue in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method intValue in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method longValue in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method shortValue in class 'java.lang.Integer.class, either in java.* or GWT related class
+[INFO]             method 'equals' of class 'char[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'char[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'char[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'char[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'char[].class' is not invokable because the class is an array type
+[INFO]             not emitting code for accessing method deserialize in class 'com.google.gwt.user.client.rpc.core.java.lang.Float_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method instantiate in class 'com.google.gwt.user.client.rpc.core.java.lang.Float_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serialize in class 'com.google.gwt.user.client.rpc.core.java.lang.Float_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deserializeInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Float_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hasCustomInstantiateInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Float_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method instantiateInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Float_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serializeInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Float_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deserialize in class 'com.google.gwt.user.client.rpc.core.java.lang.Object_Array_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serialize in class 'com.google.gwt.user.client.rpc.core.java.lang.Object_Array_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deserializeInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Object_Array_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serializeInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Object_Array_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method parseBoolean in class 'java.lang.Boolean.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.Boolean.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.Boolean.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.Boolean.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.Boolean.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method booleanValue in class 'java.lang.Boolean.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method compareTo in class 'java.lang.Boolean.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method equals in class 'java.lang.Boolean.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.lang.Boolean.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deserialize in class 'com.google.gwt.user.client.rpc.core.java.lang.Double_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method instantiate in class 'com.google.gwt.user.client.rpc.core.java.lang.Double_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serialize in class 'com.google.gwt.user.client.rpc.core.java.lang.Double_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deserializeInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Double_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hasCustomInstantiateInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Double_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method instantiateInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Double_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serializeInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Double_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             method 'equals' of class 'boolean[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'boolean[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'boolean[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'boolean[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'boolean[].class' is not invokable because the class is an array type
+[INFO]             method 'equals' of class 'byte[][].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'byte[][].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'byte[][].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'byte[][].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'byte[][].class' is not invokable because the class is an array type
+[INFO]             method 'equals' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelMeshPart[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelMeshPart[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelMeshPart[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelMeshPart[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelMeshPart[].class' is not invokable because the class is an array type
+[INFO]             method 'equals' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelNodePart[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelNodePart[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelNodePart[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelNodePart[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.graphics.g3d.model.data.ModelNodePart[].class' is not invokable because the class is an array type
+[INFO]             not emitting code for accessing method clone in class 'java.util.HashMap.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method equals in class 'java.util.HashMap.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method getHashCode in class 'java.util.HashMap.class, either in java.* or GWT related class
+[INFO]             method 'equals' of class 'com.badlogic.gdx.scenes.scene2d.Actor[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.scenes.scene2d.Actor[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.scenes.scene2d.Actor[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.scenes.scene2d.Actor[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.scenes.scene2d.Actor[].class' is not invokable because the class is an array type
+[INFO]             not emitting code for accessing method create in class 'com.google.gwt.user.client.rpc.core.java.lang.String_FieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deserial in class 'com.google.gwt.user.client.rpc.core.java.lang.String_FieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serial in class 'com.google.gwt.user.client.rpc.core.java.lang.String_FieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method compare in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method floatToIntBits in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method intBitsToFloat in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isInfinite in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isInfinite in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isNaN in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method isNaN in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method parseFloat in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method valueOf in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method byteValue in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method compareTo in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method doubleValue in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method equals in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method floatValue in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method intValue in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method longValue in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method shortValue in class 'java.lang.Float.class, either in java.* or GWT related class
+[INFO]             method 'equals' of class 'com.badlogic.gdx.scenes.scene2d.ui.Button[].class' is not invokable because the class is an array type
+[INFO]             method 'getClass' of class 'com.badlogic.gdx.scenes.scene2d.ui.Button[].class' is not invokable because the class is an array type
+[INFO]             method 'hashCode' of class 'com.badlogic.gdx.scenes.scene2d.ui.Button[].class' is not invokable because the class is an array type
+[INFO]             method 'toString' of class 'com.badlogic.gdx.scenes.scene2d.ui.Button[].class' is not invokable because the class is an array type
+[INFO]             method 'finalize' of class 'com.badlogic.gdx.scenes.scene2d.ui.Button[].class' is not invokable because the class is an array type
+[INFO]             method 'obtainCell' of class 'com.badlogic.gdx.scenes.scene2d.ui.TableToolkit.class' is not invokable because one of its argument types is not visible
+[INFO]             method 'clearDebugRectangles' of class 'com.badlogic.gdx.scenes.scene2d.ui.TableToolkit.class' is not invokable because one of its argument types is not visible
+[INFO]             method 'addDebugRectangle' of class 'com.badlogic.gdx.scenes.scene2d.ui.TableToolkit.class' is not invokable because one of its argument types is not visible
+[INFO]             not emitting code for accessing method equals in class 'java.lang.String[].class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method getClass in class 'java.lang.String[].class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hashCode in class 'java.lang.String[].class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method toString in class 'java.lang.String[].class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method finalize in class 'java.lang.String[].class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deserialize in class 'com.google.gwt.user.client.rpc.core.java.lang.Short_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method instantiate in class 'com.google.gwt.user.client.rpc.core.java.lang.Short_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serialize in class 'com.google.gwt.user.client.rpc.core.java.lang.Short_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method deserializeInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Short_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method hasCustomInstantiateInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Short_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method instantiateInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Short_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             not emitting code for accessing method serializeInstance in class 'com.google.gwt.user.client.rpc.core.java.lang.Short_CustomFieldSerializer.class, either in java.* or GWT related class
+[INFO]             method 'getMask' of class 'com.badlogic.gdx.graphics.VertexAttributes.class has long return type, prohibited in JSNI
+[INFO]             280 types reflected
+[INFO]             No public default constructor for 'byte[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.collision.Sphere', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.Tree', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Interpolation.PowIn', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.InputEvent.Type', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Plane[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.utils.ObjectMap.Entries', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'java.lang.CharSequence', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'short[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.utils.ChangeListener', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.Touchable[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.Action[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.collision.Ray', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.graphics.g3d.model.data.ModelMaterial.MaterialType[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'double[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.Label', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Interpolation.Swing', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.Action', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.graphics.VertexAttribute[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.graphics.g2d.TextureRegion[][]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Interpolation.BounceOut', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for primitive type 'void'
+[INFO]             No public default constructor for 'java.lang.Enum[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Interpolation.ExpOut', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.graphics.VertexAttribute', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Interpolation.Pow', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.actions.TemporalAction', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.TextButton', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'java.lang.Object[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.Touchpad', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.graphics.g2d.NinePatch', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.CheckBox', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for primitive type 'char'
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Interpolation.Bounce', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Path', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.TextField.TextFieldListener', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'java.lang.Double', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Intersector.SplitTriangle', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.utils.Array.ArrayIterator', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.utils.ArrayMap.Entries', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.utils.Drawable', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Plane.PlaneSide[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'java.lang.Enum', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.graphics.g2d.TextureRegion[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.utils.ArrayMap.Values', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.graphics.g2d.BitmapFont.Glyph[][]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Interpolation', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.TextField.OnscreenKeyboard', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.utils.ArrayMap.Keys', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.utils.FocusListener.FocusEvent.Type[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Interpolation.PowOut', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Vector[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Interpolation.SwingOut', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.List', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.InputEvent.Type[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'float[][]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'java.util.Map', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'java.lang.Byte', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.utils.DragAndDrop.Target', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for primitive type 'long'
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.TextField.TextFieldFilter', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Interpolation.SwingIn', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'float[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for primitive type 'short'
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.Slider', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Plane.PlaneSide', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.SelectBox', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Matrix4[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Vector3[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'int[][]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for primitive type 'int'
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.utils.DragScrollListener', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.EventListener', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.collision.Segment', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Interpolation.ExpIn', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for primitive type 'boolean'
+[INFO]             No public default constructor for 'java.lang.Character', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.utils.FocusListener', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Interpolation.ElasticIn', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Interpolation.ElasticOut', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.Window', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'int[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.actions.RelativeTemporalAction', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for primitive type 'double'
+[INFO]             No public default constructor for 'java.lang.Short', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.graphics.g3d.model.data.ModelNode[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.graphics.g2d.BitmapFont.HAlignment[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.Tree.Node', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'java.lang.Integer', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'char[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.utils.Cullable', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.utils.FocusListener.FocusEvent.Type', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for primitive type 'float'
+[INFO]             No public default constructor for 'java.lang.Boolean', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.FloatCounter', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Interpolation.Elastic', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.utils.ObjectMap.Values', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for primitive type 'byte'
+[INFO]             No public default constructor for 'com.badlogic.gdx.graphics.g2d.BitmapFontCache', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'boolean[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.utils.Array.ArrayIterable', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Interpolation.Exp', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'byte[][]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.utils.Disposable', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.utils.Disableable', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.Dialog', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.ImageTextButton', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Interpolation.BounceIn', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.graphics.g3d.model.data.ModelMeshPart[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.graphics.g3d.model.data.ModelNodePart[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.utils.Layout', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Vector', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.Actor[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.ScrollPane', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.ImageButton', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'java.lang.Float', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.Plane', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.SplitPane', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.TextField', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.ui.Button[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'java.lang.String[]', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.math.WindowedMean', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.actions.DelegateAction', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.utils.ObjectMap.Keys', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.graphics.VertexAttributes', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.utils.DragAndDrop.Source', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.graphics.g3d.model.data.ModelMaterial.MaterialType', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.graphics.g2d.BitmapFont.HAlignment', or type is an array, enum, abstract class or interface type
+[INFO]             No public default constructor for 'com.badlogic.gdx.scenes.scene2d.Touchable', or type is an array, enum, abstract class or interface type
+[INFO]       Rebinding com.badlogic.gwtref.client.IReflectionCache
+[INFO]          Invoking generator com.badlogic.gwtref.gen.ReflectionCacheGenerator
+[INFO]             com.badlogic.gwtref.client.IReflectionCache
+[INFO]       Rebinding com.badlogic.gwtref.client.IReflectionCache
+[INFO]          Invoking generator com.badlogic.gwtref.gen.ReflectionCacheGenerator
+[INFO]             com.badlogic.gwtref.client.IReflectionCache
+[INFO]       Rebinding com.badlogic.gwtref.client.IReflectionCache
+[INFO]          Invoking generator com.badlogic.gwtref.gen.ReflectionCacheGenerator
+[INFO]             com.badlogic.gwtref.client.IReflectionCache
+[INFO]       Rebinding com.badlogic.gwtref.client.IReflectionCache
+[INFO]          Invoking generator com.badlogic.gwtref.gen.ReflectionCacheGenerator
+[INFO]             com.badlogic.gwtref.client.IReflectionCache
+[INFO]       Rebinding com.badlogic.gwtref.client.IReflectionCache
+[INFO]          Invoking generator com.badlogic.gwtref.gen.ReflectionCacheGenerator
+[INFO]             com.badlogic.gwtref.client.IReflectionCache
+[INFO]    Adding '1' new generated units
+[INFO]       Validating units:
+[INFO]          Warnings in 'C:\Users\Leejjon\gitworkspace\libgdx-chat-example\chat\html\target\.generated\com\badlogic\gwtref\client\IReflectionCacheGenerated.java'
+[INFO]             See snapshot: C:\Users\Leejjon\AppData\Local\Temp\com.badlogic.gwtref.client.IReflectionCacheGenerated79094489842257156.java
+[INFO]          Ignored 1 unit with compilation errors in first pass.
+[INFO] Compile with -strict or with -logLevel set to TRACE or DEBUG to see all errors.
+[INFO]    Compiling 6 permutations
+[INFO]       Compiling permutation 0...
+[INFO]       Process output
+[INFO]          Compiling
+[INFO]             Compiling permutation 1...
+[INFO]       Process output
+[INFO]          Compiling
+[INFO]             Compiling permutation 4...
+[INFO]       Process output
+[INFO]          Compiling
+[INFO]             Compiling permutation 3...
+[INFO]       Process output
+[INFO]          Compiling
+[INFO]             Compiling permutation 5...
+[INFO]       Process output
+[INFO]          Compiling
+[INFO]             Compiling permutation 2...

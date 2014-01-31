@@ -6,6 +6,7 @@
 	<source path='core'/>
 	<source path='common'/>
 	<source path='html'/>
+	<source path='html/dispatch'/>
 
 	<public path="resources" />
 

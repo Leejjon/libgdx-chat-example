@@ -5,5 +5,21 @@
 				 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 														 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	<!-- Add <servlet> tags for each servlet here. -->
+	<servlet>
+		<servlet-name>GwtDispatchServlet</servlet-name>
+		<servlet-class>org.stofkat.chat.server.gwt.dispatch.GwtDispatchServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>HttpDispatchServlet</servlet-name>
+		<servlet-class>org.stofkat.chat.server.http.dispatch.HttpDispatchServlet</servlet-class>
+	</servlet>
 	<!-- Add <servlet-mapping> tags for each <servlet> here. -->
+	<servlet-mapping>
+		<servlet-name>GwtDispatchServlet</servlet-name>
+		<url-pattern>/chat/Chat-gwt</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HttpDispatchServlet</servlet-name>
+		<url-pattern>/Chat-http</url-pattern>
+	</servlet-mapping>
 </web-app>

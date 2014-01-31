@@ -1,4 +1,4 @@
-package org.stofkat.chat.common.dispatch;
+package org.stofkat.chat.http.dispatch;
 /**
  * The primary interface a caller must implement to receive a response from a
  * remote procedure call.

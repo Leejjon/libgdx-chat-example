@@ -1,0 +1,14 @@
+d:war/:0:application/unknown
+t:arial.fnt:11445:application/unknown
+i:arial.png:7387:image/png
+t:default.fnt:11628:application/unknown
+i:libgdx-logo.png:78970:image/png
+t:uiskin.atlas:3092:application/unknown
+t:uiskin.json:2907:application/unknown
+i:uiskin.png:22779:image/png
+t:com/badlogic/gdx/graphics/g3d/shaders/default.fragment.glsl:5043:application/unknown
+t:com/badlogic/gdx/graphics/g3d/shaders/default.vertex.glsl:8755:application/unknown
+t:com/badlogic/gdx/graphics/g3d/shaders/depth.fragment.glsl:549:application/unknown
+t:com/badlogic/gdx/graphics/g3d/shaders/depth.vertex.glsl:2687:application/unknown
+t:com/badlogic/gdx/utils/arial-15.fnt:21743:application/unknown
+i:com/badlogic/gdx/utils/arial-15.png:21814:image/png
