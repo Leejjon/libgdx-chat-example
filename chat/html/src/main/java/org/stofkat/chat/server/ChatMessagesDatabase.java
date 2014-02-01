@@ -31,7 +31,7 @@ import org.stofkat.chat.common.ChatMessage;
  * @author Leejjon
  */
 public class ChatMessagesDatabase {
-	public static final ChatMessagesDatabase instance = new ChatMessagesDatabase();
+	private static final ChatMessagesDatabase instance = new ChatMessagesDatabase();
 
 	private final int capacity = 200;
 
