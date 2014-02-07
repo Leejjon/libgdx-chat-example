@@ -12,6 +12,7 @@ import org.stofkat.chat.server.Dispatch;
 import org.stofkat.chat.server.InstanceActionHandlerRegistry;
 import org.stofkat.chat.server.SimpleDispatch;
 import org.stofkat.chat.server.actionhandlers.ChatActionHandler;
+import org.stofkat.chat.server.actionhandlers.UpdateActionHandler;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
@@ -23,6 +24,7 @@ public class GwtDispatchServlet extends RemoteServiceServlet implements GwtDispa
 	public GwtDispatchServlet() {
 		InstanceActionHandlerRegistry registry = new DefaultActionHandlerRegistry();
 		registry.addHandler(new ChatActionHandler());
+		registry.addHandler(new UpdateActionHandler());
 		dispatch = new SimpleDispatch(registry);
 	}
 	

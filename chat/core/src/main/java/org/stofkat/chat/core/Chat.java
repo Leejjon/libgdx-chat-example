@@ -36,6 +36,10 @@ public abstract class Chat implements ApplicationListener, ClientInterface, Serv
 	
 	private String userName;
 	
+	private int lastChatMessageId = 0;
+	
+	private long numberOfSecondsBetweenUpdateCalls = 3L;
+	
 	private Timer timer;
 	
 	@Override
@@ -130,6 +134,19 @@ public abstract class Chat implements ApplicationListener, ClientInterface, Serv
 		
 		isStarted = true;
 		Gdx.input.setInputProcessor(chatStage);
+		
+		timer = new Timer();
+		
+	}
+	
+	@Override
+	public void pauseTimerBecauseWereGonnaUpdate() {
+		if (timer != null) {
+			timer.clear();
+			
+			UpdateTask getUpdatesTask = new UpdateTask(this);
+			timer.scheduleTask(getUpdatesTask, numberOfSecondsBetweenUpdateCalls * 3, numberOfSecondsBetweenUpdateCalls);
+		}
 	}
 	
 	@Override
@@ -174,10 +191,12 @@ public abstract class Chat implements ApplicationListener, ClientInterface, Serv
 		}
 	}
 	
-	protected abstract void loadUIStuff();
-	
 	@Override
 	public void close() {
 		dispose();
+	}
+	
+	public int getLastChatMessageId() {
+		return lastChatMessageId;
 	}
 }

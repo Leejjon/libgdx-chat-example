@@ -8,12 +8,6 @@ import org.stofkat.chat.http.dispatch.HttpDispatchServiceAsync;
 
 public class DesktopChat extends Chat {
 	private HttpDispatchServiceAsync server = new DesktopDispatchServiceAsync();
-	
-	@Override
-	protected void loadUIStuff() {
-		// TODO Auto-generated method stub
-		
-	}
 
 	@Override
 	public <R extends Result> void executeServerAction(Action<R> action) {

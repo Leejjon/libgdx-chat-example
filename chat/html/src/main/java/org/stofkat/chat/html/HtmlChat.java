@@ -11,13 +11,6 @@ import com.google.gwt.core.client.GWT;
 
 public class HtmlChat extends Chat {
 	private final GwtDispatchServiceAsync chatService = GWT.create(GwtDispatchService.class);
-	
-	
-	@Override
-	protected void loadUIStuff() {
-		// TODO Auto-generated method stub
-		
-	}
 
 	@Override
 	public <R extends Result> void executeServerAction(Action<R> action) {

@@ -22,6 +22,7 @@ import org.stofkat.chat.server.Dispatch;
 import org.stofkat.chat.server.InstanceActionHandlerRegistry;
 import org.stofkat.chat.server.SimpleDispatch;
 import org.stofkat.chat.server.actionhandlers.ChatActionHandler;
+import org.stofkat.chat.server.actionhandlers.UpdateActionHandler;
 
 /**
  * Most code here is ripped from the AbstractStandardDispatchServlet class in
@@ -37,12 +38,12 @@ public class HttpDispatchServlet extends HttpServlet {
 	public HttpDispatchServlet() {
 		InstanceActionHandlerRegistry registry = new DefaultActionHandlerRegistry();
 		registry.addHandler(new ChatActionHandler());
+		registry.addHandler(new UpdateActionHandler());
 		dispatch = new SimpleDispatch(registry);
 	}
 
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse res) throws ServletException, IOException {
-
 		Throwable t = null;
 		byte[] output = null;
 		try {

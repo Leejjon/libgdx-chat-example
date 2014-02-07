@@ -12,4 +12,15 @@ public class UpdateAction implements Action<ChatResult> {
 	 */
 	public UpdateAction() {}
 	
+	public UpdateAction(int lastReceivedChatMessageId) {
+		this.lastReceivedChatMessageId = lastReceivedChatMessageId;
+	}
+
+	public int getLastReceivedChatMessageId() {
+		return lastReceivedChatMessageId;
+	}
+
+	public void setLastReceivedChatMessageId(int lastReceivedChatMessageId) {
+		this.lastReceivedChatMessageId = lastReceivedChatMessageId;
+	}
 }
