@@ -9,13 +9,6 @@ import org.stofkat.chat.http.dispatch.HttpDispatchServiceAsync;
 public class AndroidChat extends Chat {
 	private HttpDispatchServiceAsync server = new AndroidDispatchServiceAsync();
 
-	
-	@Override
-	protected void loadUIStuff() {
-		// TODO Auto-generated method stub
-		
-	}
-
 	@SuppressWarnings("hiding")
 	@Override
 	public <R extends Result> void executeServerAction(Action<R> action) {

@@ -2,12 +2,11 @@ package org.stofkat.chat.server;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import org.stofkat.chat.common.ChatMessage;
+import org.stofkat.chat.common.util.LowestIdFinder;
 
 /**
  * This isn't an actual database. You probably should use a database in a real
@@ -59,7 +58,7 @@ public class ChatMessagesDatabase {
 			// If the list is already full.
 			if (newId >= capacity) {
 				// We remove the oldest chat message.
-				Integer oldestId = getLowestId(chatMessages.keySet());
+				Integer oldestId = LowestIdFinder.getLowestId(chatMessages.keySet());
 				chatMessages.remove(oldestId);
 				
 				// And add the new chat message.
@@ -79,8 +78,8 @@ public class ChatMessagesDatabase {
 		}
 	}
 	
-	public List<ChatMessage> getLatestMessages(int lastValueTheClientHas) {
-		List<ChatMessage> newMessagesForClient = new ArrayList<ChatMessage>();
+	public ArrayList<ChatMessage> getLatestMessages(int lastValueTheClientHas) {
+		ArrayList<ChatMessage> newMessagesForClient = new ArrayList<ChatMessage>();
 		
 		synchronized (chatMessages) {
 			for (int i = lastValueTheClientHas; i < nextAvailableId.get(); i++) {
@@ -99,16 +98,4 @@ public class ChatMessagesDatabase {
 	public static ChatMessagesDatabase getInstance() {
         return instance;
     }
-	
-	private static Integer getLowestId(Set<Integer> chatMessages) {
-		Integer lowestId = new Integer(Integer.MAX_VALUE);
-		
-		for (Integer id : chatMessages) {
-			if (id.longValue() < lowestId) {
-				lowestId = id;
-			}
-		}
-		
-		return lowestId;
-	}
 }

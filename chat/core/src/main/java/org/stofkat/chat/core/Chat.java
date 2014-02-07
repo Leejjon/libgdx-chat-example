@@ -1,11 +1,12 @@
 package org.stofkat.chat.core;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.stofkat.chat.common.ChatMessage;
 import org.stofkat.chat.common.ClientInterface;
-import org.stofkat.chat.common.actions.Action;
-import org.stofkat.chat.common.results.Result;
+import org.stofkat.chat.common.util.LowestIdFinder;
 
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
@@ -27,7 +28,9 @@ public abstract class Chat implements ApplicationListener, ClientInterface, Serv
 	private Stage startStage;
 	private Skin uiSkin;
 	private TextField userNameTextField;
-	private ArrayList<ChatMessage> messages = new ArrayList<ChatMessage>();
+
+	private Map<Integer, ChatMessage> chatMessages = new HashMap<Integer,ChatMessage>();
+	
 	private boolean isStarted = false;
 	private Stage chatStage;
 	private List chatMessagesList;
@@ -87,11 +90,11 @@ public abstract class Chat implements ApplicationListener, ClientInterface, Serv
 		chatLayoutTable.setFillParent(true);
 		
 		// Add one test chatmessage.
-		for (int i = 0; i < 20; i++) {
-			messages.add(new ChatMessage(0, "Leejjon", "1337", "Blabla", System.currentTimeMillis()));
-		}
+//		for (int i = 0; i < 20; i++) {
+//			messages.add(new ChatMessage(0, "Leejjon", "1337", "Blabla", System.currentTimeMillis()));
+//		}
 		
-		chatMessagesList = new List(messages.toArray(), uiSkin);
+		chatMessagesList = new List(chatMessages.values().toArray(), uiSkin);
 		
 		ScrollPane scrollPaneContainingChatMessages = new ScrollPane(chatMessagesList, uiSkin);
 		scrollPaneContainingChatMessages.setWidth((float) Gdx.graphics.getWidth());
@@ -101,9 +104,8 @@ public abstract class Chat implements ApplicationListener, ClientInterface, Serv
 		chatLayoutTable.bottom();
 		chatLayoutTable.left();
 		chatLayoutTable.add(scrollPaneContainingChatMessages).colspan(2).left().width((float) Gdx.graphics.getWidth());
-//		chatLayoutTable.bottom();
 		chatLayoutTable.row();
-//		
+		
 		inChatUserNameLabel = new Label("Not picked yet", uiSkin);
 		
 		newMessageTextField = new TextField("", uiSkin);
@@ -135,8 +137,34 @@ public abstract class Chat implements ApplicationListener, ClientInterface, Serv
 		isStarted = true;
 		Gdx.input.setInputProcessor(chatStage);
 		
-		timer = new Timer();
+		chatStage.setKeyboardFocus(newMessageTextField);
 		
+		timer = new Timer();
+		timer.scheduleTask(new UpdateTask(this), 0, numberOfSecondsBetweenUpdateCalls);
+	}
+	
+	public void updateList(ArrayList<ChatMessage> newMessages) {
+		int maxCapacity = 200;
+		
+		int newSize = newMessages.size() + chatMessages.size();
+		
+		int totalMessagesToDelete = newSize - maxCapacity;
+		for (int messageToDelete = totalMessagesToDelete; messageToDelete > 0; messageToDelete--) {
+			Integer messageToDeleteKey = LowestIdFinder.getLowestId(chatMessages.keySet());
+			chatMessages.remove(messageToDeleteKey);
+		}
+		
+		// Actually add the message to our in memory HashMap.
+		for (int i = 0; i < newMessages.size(); i++) {
+			ChatMessage message = newMessages.get(i);
+			chatMessages.put(new Integer(message.getId()), message);
+		}
+		
+		// Add the values in the HashMap to the ListBox.
+		chatMessagesList.setItems(chatMessages.values().toArray());
+		
+		// Set the latest message as the latest message we've received.
+		lastChatMessageId = newMessages.get(newMessages.size() - 1).getId();
 	}
 	
 	@Override
@@ -183,6 +211,9 @@ public abstract class Chat implements ApplicationListener, ClientInterface, Serv
 
 	@Override
 	public void dispose () {
+		if (timer != null) {
+			timer.clear();
+		}
 		if (uiSkin != null) {
 			uiSkin.dispose();
 		}
