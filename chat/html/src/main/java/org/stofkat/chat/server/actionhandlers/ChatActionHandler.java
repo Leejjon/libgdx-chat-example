@@ -23,7 +23,7 @@ public class ChatActionHandler implements ActionHandler<ChatAction, ChatResult> 
 		
 		db.postNewMessage(action.getAuthor(), session.getId(), action.getMessage());
 		
-		return new ChatResult(db.getLatestMessages(action.getLastReceivedChatMessageId()));
+		return db.getLatestMessages(action.getLastReceivedChatMessageId());
 	}
 
 	@Override

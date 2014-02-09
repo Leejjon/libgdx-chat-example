@@ -6,6 +6,8 @@ import java.util.Map;
 
 import org.stofkat.chat.common.ChatMessage;
 import org.stofkat.chat.common.ClientInterface;
+import org.stofkat.chat.common.actions.ChatAction;
+import org.stofkat.chat.common.util.HashMapToOrderedArray;
 import org.stofkat.chat.common.util.LowestIdFinder;
 
 import com.badlogic.gdx.ApplicationListener;
@@ -35,7 +37,8 @@ public abstract class Chat implements ApplicationListener, ClientInterface, Serv
 	private Stage chatStage;
 	private List chatMessagesList;
 	private Label inChatUserNameLabel;
-	private TextField newMessageTextField;
+	private ChatTextField newMessageTextField;
+	private ScrollPane scrollPaneContainingChatMessages;
 	
 	private String userName;
 	
@@ -96,7 +99,7 @@ public abstract class Chat implements ApplicationListener, ClientInterface, Serv
 		
 		chatMessagesList = new List(chatMessages.values().toArray(), uiSkin);
 		
-		ScrollPane scrollPaneContainingChatMessages = new ScrollPane(chatMessagesList, uiSkin);
+		scrollPaneContainingChatMessages = new ScrollPane(chatMessagesList, uiSkin);
 		scrollPaneContainingChatMessages.setWidth((float) Gdx.graphics.getWidth());
 		scrollPaneContainingChatMessages.setScrollingDisabled(true, false);
 		scrollPaneContainingChatMessages.setFadeScrollBars(false);
@@ -108,7 +111,7 @@ public abstract class Chat implements ApplicationListener, ClientInterface, Serv
 		
 		inChatUserNameLabel = new Label("Not picked yet", uiSkin);
 		
-		newMessageTextField = new TextField("", uiSkin);
+		newMessageTextField = new ChatTextField("", uiSkin);
 		
 		chatLayoutTable.add(inChatUserNameLabel).width(((float) Gdx.graphics.getWidth() / 100) * 25).bottom();
 		chatLayoutTable.add(newMessageTextField).width(((float) Gdx.graphics.getWidth() / 100) * 75/*- playerNameField.getWidth() - rightInfoScreenTable.getWidth()*/);
@@ -122,6 +125,25 @@ public abstract class Chat implements ApplicationListener, ClientInterface, Serv
 			public void changed(ChangeEvent event, Actor actor) {
 				startChatting();
 			}
+		});
+		
+		newMessageTextField.setTextFieldListener(new ChatTextField.TextFieldListener() {
+
+			@Override
+			public void keyTyped(ChatTextField textField, char key) {
+				if (key == '\r' || key == '\n') {
+					textField.getOnscreenKeyboard().show(false);
+					
+					pauseTimerBecauseWereGonnaUpdate();
+					
+					// Send an action to post your chat message on the server. 
+					executeServerAction(new ChatAction(userName, newMessageTextField.getText(), lastChatMessageId));
+					
+					// Clear the textfield so the next message can be typed.
+					newMessageTextField.setText("");
+				}
+			}
+			
 		});
 	}
 	
@@ -143,8 +165,12 @@ public abstract class Chat implements ApplicationListener, ClientInterface, Serv
 		timer.scheduleTask(new UpdateTask(this), 0, numberOfSecondsBetweenUpdateCalls);
 	}
 	
-	public void updateList(ArrayList<ChatMessage> newMessages) {
-		int maxCapacity = 200;
+	public void updateList(ArrayList<ChatMessage> newMessages, boolean resetLastId) {
+		if (resetLastId) {
+			lastChatMessageId = 0;
+		}
+		
+		int maxCapacity = 256;
 		
 		int newSize = newMessages.size() + chatMessages.size();
 		
@@ -155,16 +181,19 @@ public abstract class Chat implements ApplicationListener, ClientInterface, Serv
 		}
 		
 		// Actually add the message to our in memory HashMap.
-		for (int i = 0; i < newMessages.size(); i++) {
-			ChatMessage message = newMessages.get(i);
+		for (ChatMessage message : newMessages) {
 			chatMessages.put(new Integer(message.getId()), message);
 		}
 		
 		// Add the values in the HashMap to the ListBox.
-		chatMessagesList.setItems(chatMessages.values().toArray());
+		chatMessagesList.setItems(HashMapToOrderedArray.getOrderedObjectArray(chatMessages));
+		
+		scrollPaneContainingChatMessages.setScrollY(scrollPaneContainingChatMessages.getMaxY());
 		
 		// Set the latest message as the latest message we've received.
-		lastChatMessageId = newMessages.get(newMessages.size() - 1).getId();
+		if (newMessages.size() > 0) {
+			lastChatMessageId = newMessages.get(newMessages.size() - 1).getId();
+		}
 	}
 	
 	@Override
@@ -173,7 +202,7 @@ public abstract class Chat implements ApplicationListener, ClientInterface, Serv
 			timer.clear();
 			
 			UpdateTask getUpdatesTask = new UpdateTask(this);
-			timer.scheduleTask(getUpdatesTask, numberOfSecondsBetweenUpdateCalls * 3, numberOfSecondsBetweenUpdateCalls);
+			timer.scheduleTask(getUpdatesTask, numberOfSecondsBetweenUpdateCalls * 2, numberOfSecondsBetweenUpdateCalls);
 		}
 	}
 	

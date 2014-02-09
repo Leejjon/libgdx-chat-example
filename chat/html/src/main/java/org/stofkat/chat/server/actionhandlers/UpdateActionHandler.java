@@ -20,7 +20,7 @@ public class UpdateActionHandler implements ActionHandler<UpdateAction, ChatResu
 	public ChatResult execute(UpdateAction action, ExecutionContext context, HttpSession session)
 			throws DispatchException {
 		ChatMessagesDatabase db = ChatMessagesDatabase.getInstance();
-		return new ChatResult(db.getLatestMessages(action.getLastReceivedChatMessageId()));
+		return db.getLatestMessages(action.getLastReceivedChatMessageId());
 	}
 
 	@Override

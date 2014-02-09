@@ -1,6 +1,10 @@
 package org.stofkat.chat.common;
 
-public class ChatMessage {
+import java.io.Serializable;
+
+public class ChatMessage implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
 	private int id;
 	private String authorName;
 	private String authorSessionId;

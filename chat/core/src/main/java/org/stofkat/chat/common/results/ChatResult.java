@@ -9,6 +9,8 @@ import org.stofkat.chat.common.ClientInterface;
 public class ChatResult implements Result {
 	private static final long serialVersionUID = 1L;
 	
+	private boolean resetLastId;
+	
 	private ArrayList<ChatMessage> newMessages;
 	
 	/**
@@ -16,13 +18,14 @@ public class ChatResult implements Result {
 	 */
 	public ChatResult() {}
 	
-	public ChatResult(ArrayList<ChatMessage> newMessages) {
+	public ChatResult(ArrayList<ChatMessage> newMessages, boolean resetLastId) {
 		this.newMessages = newMessages;
+		this.resetLastId = resetLastId;
 	}
 	
 	@Override
 	public void processResult(ClientInterface clientInterface) {
-		clientInterface.updateList(newMessages);
+		clientInterface.updateList(newMessages, resetLastId);
 	}
 	
 	public List<ChatMessage> getNewMessages() {
@@ -31,5 +34,13 @@ public class ChatResult implements Result {
 	
 	public void setNewMessages(ArrayList<ChatMessage> newMessages) {
 		this.newMessages = newMessages;
+	}
+
+	public boolean isResetLastId() {
+		return resetLastId;
+	}
+
+	public void setResetLastId(boolean resetLastId) {
+		this.resetLastId = resetLastId;
 	}
  }

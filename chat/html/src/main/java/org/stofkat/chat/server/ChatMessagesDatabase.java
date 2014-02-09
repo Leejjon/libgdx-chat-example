@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import org.stofkat.chat.common.ChatMessage;
+import org.stofkat.chat.common.results.ChatResult;
 import org.stofkat.chat.common.util.LowestIdFinder;
 
 /**
@@ -32,7 +33,7 @@ import org.stofkat.chat.common.util.LowestIdFinder;
 public class ChatMessagesDatabase {
 	private static final ChatMessagesDatabase instance = new ChatMessagesDatabase();
 
-	private final int capacity = 200;
+	private final int capacity = 256;
 
 	private AtomicInteger nextAvailableId;
 	
@@ -78,16 +79,31 @@ public class ChatMessagesDatabase {
 		}
 	}
 	
-	public ArrayList<ChatMessage> getLatestMessages(int lastValueTheClientHas) {
+	/**
+	 * 
+	 * @param lastValueTheClientHas
+	 * @return
+	 */
+	public ChatResult getLatestMessages(int lastValueTheClientHas) {
 		ArrayList<ChatMessage> newMessagesForClient = new ArrayList<ChatMessage>();
 		
+		boolean mapHasBeenReset = false;
 		synchronized (chatMessages) {
-			for (int i = lastValueTheClientHas; i < nextAvailableId.get(); i++) {
-				newMessagesForClient.add(chatMessages.get(new Integer(i)));
+			if (chatMessages.get(new Integer(lastValueTheClientHas)) != null) {
+				for (int i = lastValueTheClientHas; i < nextAvailableId.get(); i++) {
+					newMessagesForClient.add(chatMessages.get(new Integer(i)));
+				}
+			} else {
+				// If the last received value is no longer on the server, we should
+				// tell the client it needs to reset it's last received id to zero.
+				mapHasBeenReset = true;
+				for (int i = 1; i < nextAvailableId.get(); i++) {
+					newMessagesForClient.add(chatMessages.get(new Integer(i)));
+				}
 			}
 		}
 		
-		return newMessagesForClient;
+		return new ChatResult(newMessagesForClient, mapHasBeenReset);
 	}
 	
 	/**

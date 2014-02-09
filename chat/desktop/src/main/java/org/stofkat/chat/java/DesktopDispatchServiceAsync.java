@@ -14,7 +14,7 @@ public class DesktopDispatchServiceAsync implements HttpDispatchServiceAsync {
 	 * Replace stofkat.org by the IP of your server (or 127.0.0.1 if you're
 	 * running local).
 	 */
-	private final String dispatchServiceUri = "http://stofkat:8080/Chat-http";
+	private final String dispatchServiceUri = "http://127.0.0.1:8888/Chat-http";
 	private HttpClient httpClient;
 	private CustomCookieStore cookieStore;
 
