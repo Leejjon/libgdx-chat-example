@@ -25,7 +25,7 @@ public class AndroidDispatchServiceAsync implements HttpDispatchServiceAsync {
 	/**
 	 * Replace stofkat.org with the IP address of your server.
 	 */
-	private final String dispatchServiceUri = "http://stofkat.org:8080/" + "Chat-http";
+	private final String dispatchServiceUri = "http://leejjon.net:8080/chat/Chat-http";
 	private HttpClient httpClient;
 	private CustomCookieStore cookieStore;
 	
